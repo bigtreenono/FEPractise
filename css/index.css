@@ -1,11 +1,15 @@
 .jd {
     height: 480px;
+    position: relative;
 }
 
 .jd_ad {
     width: 100%;
     height: 480px;
     background: url(../images/bg.png) no-repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .jd_ad a {
@@ -15,5 +19,261 @@
 
 .jd_inner {
     height: 480px;
-    background-color: pink;
+    position: relative;
+}
+
+.jd_col1 {
+    width: 190px;
+    height: 465px;
+    padding-top: 15px;
+    background-color: #6e6568;
+    float: left;
+}
+
+.jd_col1 li {
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.jd_col1 li:hover {
+    background-color: #999395;
+}
+
+.jd_col1 a {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.jd_col1 span {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.jd_col2 {
+    width: 790px;
+    height: 480px;
+    /* background-color: #6e6568; */
+    float: left;
+    margin-left: 10px;
+}
+
+.jd_col2_top {
+    height: 340px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.jd_col2_top_leftArrow,
+.jd_col2_top_rightArrow {
+    color: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    top: 50%;
+    margin-top: -30px;
+    background: rgba(0, 0, 0, .3);
+}
+
+.jd_col2_top_leftArrow {
+    left: 0;
+}
+
+.jd_col2_top_rightArrow {
+    right: 0;
+}
+
+.jd_col2_top ol {
+    width: 180px;
+    height: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+}
+
+.jd_col2_top ol li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin: 4px 5px;
+    cursor: pointer;
+}
+
+.jd_col2_top .current {
+    background-color: #f10215;
+}
+
+.jd_col2_bottom {
+    height: 130px;
+}
+
+.jd_col2_bottom div {
+    float: left;
+    width: 390px;
+}
+
+.jd_col2_bottom_left {
+    margin-right: 10px;
+}
+
+.jd_col2_bottom div img {
+    width: 100%;
+}
+
+.jd_col3 {
+    width: 190px;
+    height: 480px;
+    float: right;
+}
+
+.jd_col3_user {
+    height: 95px;
+    padding: 20px 15px 0;
+}
+
+.user_info {
+    padding-left: 50px;
+    position: relative;
+    font-size: 12px;
+    line-height: 22px;
+    color: #747474;
+}
+
+.user_info a {
+    font-size: 12px;
+    color: #747474;
+}
+
+.user_info a:hover {
+    color: #f10215;
+}
+
+.user_avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user_avatar img {
+    width: 100%;
+}
+
+.user_profit {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.user_profit a {
+    border: 2px solid #f10215;
+    color: #f10215;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.user_profit a:hover {
+    background-color: #f10215;
+    color: #fff;
+}
+
+.jd_col3_news {
+    height: 151px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px 0;
+}
+
+.jd_col3_news a {
+    color: #747474;
+    font-size: 12px;
+}
+
+.jd_col3_news .tab {
+    height: 25px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.tab a {
+    margin: 0 4px;
+}
+
+.promotion {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.news_more {
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.jd_col3_news .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 28px;
+    background-color: #f10215;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content li {
+    height: 23px;
+    line-height: 23px;
+}
+
+.jd_col3_service {
+    height: 209px;
+    /* width: 190px; */
+    overflow: hidden;
+}
+
+.jd_col3_service ul {
+    width: 200px;
+}
+
+.jd_col3_service li {
+    width: 48px;
+    height: 70px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.jd_col3_service li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.jd_col3_service li a i {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 15px auto 8px;
+    background: url(../images/sprite_fs@1x.png) no-repeat;
+}
+
+.jd_col3_service li a p {
+    text-align: center;
 }
