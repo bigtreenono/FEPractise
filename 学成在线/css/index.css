@@ -1,3 +1,311 @@
-@charset "UTF-8";
-/* CSS Document */
+body {
+    background-color: #f3f5f7;
+    height: 3000px;
+}
 
+header {
+    width: 1300px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.logo {
+    width: 195px;
+    height: 42px;
+    float: left;
+}
+
+.logo a {
+    width: 195px;
+    height: 42px;
+    display: block;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+nav {
+    float: left;
+    margin-left: 20px;
+}
+
+nav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 25px;
+}
+
+nav li a {
+    font-size: 18px;
+    height: 40px;
+    display: block;
+    padding: 0 10px;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 410px;
+    height: 40px;
+    margin-left: 150px;
+}
+
+.search input {
+    /* float: left;
+    width: 410px;
+    height: 40px; */
+    width: 360px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    outline: none;
+    padding-left: 10px;
+    float: left;
+}
+
+.search button {
+    float: left;
+    border: 0;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    background: url(../images/fa-search.png) no-repeat;
+}
+
+.profile {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+.profile dt,
+.profile dd {
+    float: left;
+}
+
+.profile s {
+    padding: 0 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.profile s::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.profile span img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.inner {
+    height: 100%;
+    position: relative;
+}
+
+.subnav {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    /* background-color: red; */
+}
+
+.subnav ul {
+    margin-top: 10px;
+}
+
+.subnav li {
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.subnav li a {
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+}
+
+.subnav li a:hover {
+    color: #00a4ff;
+}
+
+.subnav li a span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 176px;
+    height: 20px;
+}
+
+.circle i {
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, .3);
+    display: block;
+    float: left;
+    margin: 3px 7px;
+}
+
+.circle i:hover {
+    width: 25px;
+    background-color: #fff;
+}
+
+.curriculum {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 228px;
+    height: 300px;
+}
+
+.curriculum dt {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: lightblue;
+}
+
+.curriculum dd {
+    padding: 15px 20px 0;
+}
+
+.curriculum li {
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+.curriculum li h5 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.curriculum li:last-child {
+    border: 0;
+}
+
+.curriculum dd a {
+    display: block;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.curriculum dd a:hover {
+    color: #fff;
+    background-color: #00a4ff;
+}
+
+.recommend {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+.recommend strong {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.recommend a {
+    margin: 0 15px;
+}
+
+.recommend em {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.products {
+    margin-top: 30px;
+}
+
+.products_header {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.products_header h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.products_header a {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.products_body li {
+    background-color: #fff;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.products_body li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.product_title {
+    width: 180px;
+    height: 60px;
+    padding-top: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.products_body li p {
+    width: 180px;
+    margin: 20px auto;
+}
+
+.products_body li p span {
+    color: orange;
+}
